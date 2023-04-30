@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- Default UI with Pie chart (monthly & yearly) -->
+
+      <fieldset>
+        <legend>Get Report</legend>
+        <span>
+          <label for="get-month">Month</label>
+          <select name="get-month" id="get-month"></select>
+        </span>
+        <span>
+          <label for="get-year">Year</label>
+          <select name="get-year" id="get-year"></select>
+        </span>
+        <span>
+          <button>Generate</button>
+        </span>
+      </fieldset>
+
+      <!--
+        Generated report will go here
+          - with pie chart
+          - with table breakdown
+      -->
+
+      <fieldset>
+        <legend>Create Report</legend>
+        <span>
+          <label for="create-month">Month</label>
+          <select name="create-month" id="month"></select>
+        </span>
+        <span>
+          <label for="create-year">Year</label>
+          <select name="create-year" id="create-year"></select>
+        </span>
+        <span>
+          <label for="create-type">Type</label>
+          <select name="create-type" id="create-type">
+            <option value="income" selected>Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </span>
+        <span>
+          <button>Create</button>
+        </span>
+      </fieldset>
+
+      <div>
+        <input type="text" placeholder="Income Name" />
+        <input type="number" placeholder="Amount" />
+      </div>
+
+      <div>
+        <input type="text" placeholder="Expense Name" />
+        <input type="number" placeholder="Amount" />
+      </div>
+    </main>
+  </body>
+</html>
